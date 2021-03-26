@@ -48,7 +48,6 @@ router.route("/add").post(upload.single("image"), (req, res) => {
   const price = req.body.price;
   const stock = req.body.stock;
   const image = req.file.filename;
-  console.log("got data");
 
   const newProductData = {
     name,

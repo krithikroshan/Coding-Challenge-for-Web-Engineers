@@ -20,8 +20,6 @@ function ProductAddScreen({ match, history }) {
         .then((res) => {
           const categories = res.data;
           setCategories(categories);
-          setCategory(categories[0]);
-          console.log(category)
         })
         .catch(function (error) {
           console.log(error);
